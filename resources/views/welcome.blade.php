@@ -5,6 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
         <title>IT support for Business of any size</title>
+        <link rel="shortcut icon" href="{{ asset('images/favicon.png') }}" />
         <link rel="stylesheet" href="{{ mix('css/app.css') }}">
         <script src="{{ mix('js/app.js') }}" defer></script>
     </head>
@@ -64,7 +65,7 @@
                 <div class="rounded-lg bg-white shadow-xs overflow-hidden" role="menu" aria-orientation="vertical" aria-labelledby="main-menu">
                     <div class="px-5 pt-4 flex items-center justify-between">
                     <div>
-                        <img class="h-8 w-auto" src="{{ asset('images/ithub.svg') }}" alt="">
+                        <x-logo class="w-32" color="text-indigo-600"></x-logo>
                     </div>
                     <div class="-mr-2">
                         <button x-on:click="open = false" type="button" class="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:bg-gray-100 focus:text-gray-500 transition duration-150 ease-in-out" aria-label="Close menu">
